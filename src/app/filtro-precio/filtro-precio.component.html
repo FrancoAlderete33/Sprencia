@@ -1,0 +1,17 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="min">
+    <label for="preMin">Precio Min</label>
+    <input type="number" id="preMin" name="preMin" formControlName="preMin">
+    <p *ngIf="formulario.get('preMin')?.hasError('min') && formulario.get('preMin')?.touched"> El valor
+      del
+      input no puede ser negativo
+    </p>
+  </div>
+  <div class="max">
+    <label for="preMax">Precio Max</label>
+    <input type="number" id="preMax" name="preMax" formControlName="preMax">
+    <p *ngIf="formulario.get('preMax')?.hasError('min') && formulario.get('preMax')?.touched"> No puede ser negativo
+    </p>
+  </div>
+  <button class="btn">Filtrar</button>
+</form>

@@ -1,0 +1,24 @@
+<div class="activities">
+  <div class="activity ">
+    <img width="450px" height="350px" src="../../assets/Proyecto pre-final Sprencia (6).png" alt="">
+    <h3>{{activity.actividad}}</h3>
+    <p>Horario Disponible : {{activity.descripcion}}</p>
+    <a>Opiniones de clientes</a>
+    <button [routerLink]="['/listado-actividades/', activity.id]">Comprar</button>
+    <a class="back" [routerLink]="['/listado-actividades']">Volver</a>
+  </div>
+</div>
+
+<!-- <h1>Detalle de la actividad</h1>
+
+
+<div class="activity ">
+  <img width="500px" height="400px" src="../../assets/Proyecto pre-final Sprencia (3).png" alt="">
+  <h3>Programacion Basica</h3>
+  <p>En este curso te vamos a enseñar las bases de la programacion para que puedas empezar a comprender el
+    funcionamiento de
+    las paginas web. Y que con el transcurrir del curso puedas diseñar tu propia pagina . </p>
+  <a>Opiniones de clientes</a>
+  <button>Comprar</button>
+  <a class="back" [routerLink]="['/listado-actividades']">Volver</a>
+</div> -->

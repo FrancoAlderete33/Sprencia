@@ -1,0 +1,64 @@
+h1,
+label {
+  text-align: center;
+  color: #0D99FF;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.actividad,
+.descripcion,
+.horarios-disponibles,
+.precio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+}
+
+.reset {
+  background-color: grey;
+}
+
+.reset:hover {
+  background-color: rgb(97, 97, 97)
+}
+
+button {
+
+  width: 300px;
+  height: 33px;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: rgb(54, 228, 112);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: rgba(60, 252, 124, 0.8);
+}
+
+button:active {
+  transform: scale(0.97);
+}

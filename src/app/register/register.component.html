@@ -1,0 +1,65 @@
+<h1>Registro</h1>
+
+<div>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="username">
+      <label>Username</label>
+      <input type="text" name="username" id="username" formControlName="username">
+    </div>
+    <div class="input-check"
+      *ngIf="formulario.get('username')?.hasError('required') && formulario.get('username')?.touched">
+      <p>Debes introducir un username</p>
+    </div>
+
+    <div class="apellidos">
+      <label>Apellidos</label>
+      <input type="text" name="apellidos" id="apellidos" formControlName="apellidos">
+    </div>
+    <div class="input-check"
+      *ngIf="formulario.get('apellidos')?.hasError('required') && formulario.get('apellidos')?.touched">
+      <p>Debes introducir tu apellido</p>
+    </div>
+
+    <div class="ciudad">
+      <label>Ciudad</label>
+      <input type="text" name="ciudad" id="ciudad" formControlName="ciudad">
+    </div>
+    <div class="input-check"
+      *ngIf="formulario.get('ciudad')?.hasError('required') && formulario.get('ciudad')?.touched">
+      <p>Debes introducir la cuidad</p>
+    </div>
+
+    <div class="email">
+      <label>Email</label>
+      <input type="text" name="email" id="email" formControlName="email">
+    </div>
+    <div class="input-check" *ngIf="formulario.get('email')?.hasError('required') && formulario.get('email')?.touched">
+      <p>Debes introducir el email</p>
+    </div>
+    <div class="input-check" *ngIf="formulario.get('email')?.hasError('email') && formulario.get('email')?.touched">El
+      formato
+      no es valido </div>
+
+    <div class="password">
+      <label>Password</label>
+      <input type="password" name="password" id="password" formControlName="password">
+    </div>
+    <div class="input-check"
+      *ngIf="formulario.get('password')?.hasError('required') && formulario.get('password')?.touched">
+      <p>Debes introducir la contraseña</p>
+    </div>
+
+
+    <div>
+      <button type="reset" class="reset">Reset</button>
+    </div>
+
+    <div>
+      <button type="submit" [disabled]="formulario.invalid">Listo</button>
+    </div>
+    <p *ngIf="hasError">
+      Error en usuario y/o constraseña
+    </p>
+
+  </form>
+</div>

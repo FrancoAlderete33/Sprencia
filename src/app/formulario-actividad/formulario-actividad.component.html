@@ -1,0 +1,36 @@
+<h1>Nueva Actividad</h1>
+
+<div>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="actividad">
+      <label>Actividad</label>
+      <input type="text" name="actividad" id="actividad" formControlName="actividad">
+    </div>
+
+    <div class="descripcion">
+      <label>Descripcion</label>
+      <input type="text" name="descripcion" id="descripcion" formControlName="descripcion">
+    </div>
+
+    <div class="horarios-disponibles">
+      <label>Horarios Disponibles</label>
+      <input type="text" name="horarios_disponibles" id="horarios_disponibles" formControlName="horarios_disponibles">
+    </div>
+
+    <div class="precio">
+      <label>Precio</label>
+      <input type="text" name="precio" id="precio" formControlName="precio">
+    </div>
+
+    <div>
+      <button type="reset" class="reset">Reset</button>
+    </div>
+
+    <div>
+      <button type="submit" [disabled]="formulario.invalid">Crear</button>
+    </div>
+
+
+
+  </form>
+</div>

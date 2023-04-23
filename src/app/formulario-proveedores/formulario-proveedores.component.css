@@ -1,0 +1,108 @@
+h1,
+label {
+  text-align: center;
+  color: #0D99FF;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+label {
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #0D99FF;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  height: 300px;
+  max-width: 1800px;
+
+}
+
+.nombreEmpresa,
+.web,
+.localizacion,
+.categoria,
+.actividad,
+.email,
+.numero,
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 600px;
+}
+
+.reset {
+  background-color: grey;
+}
+
+.reset:hover {
+  background-color: rgb(97, 97, 97)
+}
+
+button {
+
+  width: 600px;
+  height: 33px;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: rgba(13, 154, 255, 0.65);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: #0D99FF;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+
+@media(max-width:991px) {
+
+  .btn-send {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 325px;
+
+  }
+
+  input {
+    width: 325px;
+    height: 40px;
+  }
+
+}

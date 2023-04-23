@@ -1,0 +1,24 @@
+<h1>Listado de Actividades</h1>
+
+<form>
+  <div class="min">
+    <label for="number">Precio Min</label>
+    <input type="number">
+  </div>
+  <div class="max">
+    <label for="number">Precio Max</label>
+    <input type="number">
+  </div>
+  <button class="btn">Filtrar</button>
+</form>
+<!-- <app-filtro-precio></app-filtro-precio> -->
+
+<div class="activities">
+  <div class="activity " *ngFor="let activity of activities">
+    <img width="210px" height="210px" src="../../assets/Proyecto pre-final Sprencia (3).png" alt="">
+    <h3>{{activity.actividad}}</h3>
+    <p>Horario Disponible : {{activity.horario_disponible}}</p>
+    <p>Precio : {{activity.precio | currency: 'EUR'}}</p>
+    <button [routerLink]="['/listado-actividades/', activity.id]">Ver Más</button>
+  </div>
+</div>

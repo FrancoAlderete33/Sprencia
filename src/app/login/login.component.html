@@ -1,0 +1,35 @@
+<h1>Login</h1>
+
+<div>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="username">
+      <label>Username</label>
+      <input type="text" name="username" id="username" formControlName="username">
+    </div>
+    <div class="input-check"
+      *ngIf="formulario.get('username')?.hasError('required') && formulario.get('password')?.touched">
+      <p>El username es requerido</p>
+    </div>
+
+    <div class="password">
+      <label>Password</label>
+      <input type="password" name="password" id="password" formControlName="password">
+    </div>
+    <div class="input-check"
+      *ngIf="formulario.get('password')?.hasError('required') && formulario.get('password')?.touched">
+      <p>Debes introducir la contraseña</p>
+    </div>
+
+    <div>
+      <a [routerLink]="['/register']">¿No tienes cuenta? Registrate aquí</a>
+    </div>
+
+    <div class="btn">
+      <button type="submit" value="Enviar">Listo</button>
+    </div>
+
+    <p class="input-check" *ngIf="hasError">
+      Error en usuario y/o constraseña
+    </p>
+  </form>
+</div>

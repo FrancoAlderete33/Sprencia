@@ -1,0 +1,76 @@
+h1,
+label {
+  margin-top: 1rem;
+  text-align: center;
+  color: #0D99FF;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.input-check {
+  color: crimson;
+  font-size: 0.8rem;
+}
+
+.username,
+.password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+}
+
+
+
+
+
+
+button {
+
+  width: 300px;
+  height: 33px;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: rgba(13, 154, 255, 0.65);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: #0D99FF;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+a {
+  color: #0D99FF;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.90rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E4CCFF;
+}
